@@ -32,19 +32,34 @@
 	<div class="row" id="mainspc">
 		<div class="section" style="padding-bottom:30px;">
 			<h2>CASH Music development roadmap</h2>
+			<p>
+				We use <a href="http://github.com/cashmusic/platform">github</a> to help track and build the platform, and we'd 
+				like to make sure all that work and planning is as easy to see as possible. We've set up this roadmap page
+				to give a look at what's next, and share a little insight into where the platform is going. 
+			</p>
+			<p>
+				Are you a developer wanting to learn more?
+				<b><a href="https://github.com/cashmusic/platform/wiki">See our developer documentation.</a></b><br /><br />
+			</p>
+
 			<div class="row">
-				<div class="six columns">
+				<div class="six columns" id="nextmilestone">
 					
-				<h5>Alpha Hosted (11/19)</h5>
+				<h5><a href="https://github.com/cashmusic/platform/issues?milestone=12&state=open">Alpha Hosted (November 19)</a></h5>
+				<p>
+					The goal of this milestone is to simply get the existing platform up in a hosted 
+					multi-user environment with secure token connections and page publishing.
+				</p>
+				<b>Issues:</b><br />
 				<ul>
 				    <li>OAuth connections (or alternative)
 				    	<ul>
-				        <li>Paypal</li>
-				        <li>S3 (permission)</li>
-				        <li>MailChimp</li>
+				        <li>Paypal <a href="https://github.com/cashmusic/platform/issues/216" class="issue">#216</a></li>
+				        <li>S3 (permission) <a href="https://github.com/cashmusic/platform/issues/215" class="issue">#215</a></li>
+				        <li>MailChimp <a href="https://github.com/cashmusic/platform/issues/227" class="issue">#227</a></li>
 				    	</ul>
 				        </li>
-				    <li>Cloud Installer
+				    <li>Cloud Installer <a href="https://github.com/cashmusic/platform/issues/228" class="issue">#228</a>
 				    	<ul>
 				        <li>launcher.io / Appfog</li>
 				        <li>Support config in ENV variables</li>
@@ -52,66 +67,73 @@
 				        </li>
 				    <li>Lightweight admin “CMS”
 				    	<ul>
-				        <li>New admin mainpage</li>
-				        <li>Publishing mustache templates / editor</li>
-				        <li>Template selection</li>
-				        <li>Page publish / preview</li>
+				        <li>New admin mainpage <a href="https://github.com/cashmusic/platform/issues/232" class="issue">#232</a></li>
+				        <li>Publishing mustache templates / editor <a href="https://github.com/cashmusic/platform/issues/231" class="issue">#231</a></li>
+				        <li>Page publish / preview <a href="https://github.com/cashmusic/platform/issues/230" class="issue">#230</a></li>
 				        </ul>
 				        </li>
-				    <li>Terms of service (TOS) / examples and talk to lawyers</li>
-				    <li>DMCA safe harbor registration</li>
-				    <li>User ID security</li>
-				    <li>Close/suspend account system admin mechanism</li>
+				    <li>Admin protection between user accounts <a href="https://github.com/cashmusic/platform/issues/211" class="issue">#211</a></li>
+				    <li>Close/suspend account mechanism <a href="https://github.com/cashmusic/platform/issues/233" class="issue">#233</a></li>
 				</ul>
 				</div>
 				<div class="six columns">
 					
-					<h5>Beta Hosted Cleanup (12/3)</h5>
-						<ul>
-					    <li>Help interface</li>
-					    <li>Playlist editor</li>
-					    <li>Playlist element</li>
-					    <li>UX refinements</li>
-					    <li>Port the admin interface to Zurb Foundation</li>
-					    <li>Mobile interface for admin</li>
-					    <li>Mobile support for all elements</li>
-					    <li>Contacts instead of people for lists</li>
-					    <li>New/expanded connections</li>
-					    	<ul>
-					        <li>Stripe</li>
-					        <li>Google Drive</li>
-					        <li>Dropbox</li>
-					    	</ul>
-					   	</ul>
-					   	<br />
+					<h5><a href="https://github.com/cashmusic/platform/issues?milestone=13&state=open">Beta Hosted Cleanup (December 3)</a></h5>
+					<p>
+						With the hosted platform up and running, this next milestone focuses on usability, interface
+						design, and expanding basic services.
+					</p>
+					<b>Issues:</b><br />	
+					<ul>
+				    <li>Help interface</li>
+				    <li>Playlist editor</li>
+				    <li>Playlist element</li>
+				    <li>UX refinements</li>
+				    <li>Port the admin interface to Zurb Foundation <a href="https://github.com/cashmusic/platform/issues/236" class="issue">#236</a></li>
+				    <li>Mobile interface for admin</li>
+				    <li>Mobile support for all elements</li>
+				    <li>Contacts instead of people for lists</li>
+				    <li>New/expanded connections</li>
+				    	<ul>
+				        <li>Stripe <a href="https://github.com/cashmusic/platform/issues/220" class="issue">#220</a></li>
+				        <li>Google Drive <a href="https://github.com/cashmusic/platform/issues/219" class="issue">#219</a></li>
+				        <li>Dropbox <a href="https://github.com/cashmusic/platform/issues/218" class="issue">#218</a></li>
+				    	</ul>
+				   	</ul>
+				   	<br />
 
-					<h5>Public Hosted (12/17)</h5>
-						<ul>
-					    <li>Subscriptions (recurring payments)</li>
-					    <li>Assets-for-list (group downloads)</li>
-					    <li>Drag and drop enhancements for the “CMS” stuff</li>
-					    <li>Lightweight CRM components</li>
-					    <li>Improve tagging</li>
-					    <li>Data export for artists</li>
-					    <li>Anonymous system data export for public analysis / research</li>
-					    <li>soundandvision.js</li>
-					    <li>Media gallery element</li>
-					    <li>More tourdate customization</li>
-					    <li>Central venue database</li>
-					    <li>CC and custom license support interface for elements</li>
-					    <li>New/expanded connections</li>
-					    	<ul>
-					        <li>Twitter</li>
-					        <li>Facebook</li>
-					        <li>Songkick</li>
-					        <li>MailChimp</li>
-					        <li>Mandrill</li>
-					        </ul>
-					    </ul>
-					    <br /><br />
+					<h5><a href="https://github.com/cashmusic/platform/issues?milestone=14&state=open">Public Hosted (December 17)</a></h5>
+					<p>
+						Rounding out final features, making improvements, and getting ready for a public launch. 
+						This milestone might change shape a little, but the goal is to be ready to open the doors.
+					</p>
+					<b>Issues:</b><br />
+					<ul>
+				    <li>Subscriptions (recurring payments)</li>
+				    <li>Assets-for-list (group downloads)</li>
+				    <li>Drag and drop enhancements for the “CMS” stuff</li>
+				    <li>Lightweight CRM components</li>
+				    <li>Improve tagging</li>
+				    <li>Data export for artists</li>
+				    <li>Anonymous system data export for public analysis / research</li>
+				    <li>soundandvision.js</li>
+				    <li>Media gallery element</li>
+				    <li>More tourdate customization</li>
+				    <li>Central venue database</li>
+				    <li>CC and custom license support interface for elements</li>
+				    <li>New/expanded connections</li>
+				    	<ul>
+				        <li>Twitter</li>
+				        <li>Facebook</li>
+				        <li>Songkick</li>
+				        <li>MailChimp</li>
+				        <li>Mandrill</li>
+				        </ul>
+				    </ul>
+				    <br /><br />
 
 
-					<h5>Later</h5>
+					<h5><a href="https://github.com/cashmusic/platform/issues?labels=&milestone=none&page=1&state=open">Later</a></h5>
 						<ul>
 					    <li>Internationalization</li>
 					    <li>Federation</li>
